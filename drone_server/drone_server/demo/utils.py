@@ -46,7 +46,7 @@ def make_foler_record():
     camera.recording("{}.mp4".format(cnt+1), 'w')
 
 
-def make_foler_upload():
+def make_foler_upload(d_date):
     try :
         import argparse
         flags = argparse.ArgumentParser(parents=[tools.argparser]).parse_args()

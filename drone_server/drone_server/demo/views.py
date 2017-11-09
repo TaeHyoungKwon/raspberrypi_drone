@@ -18,7 +18,8 @@ def index(request):
             print("영상찍기 완료!")
 
         elif url_dict['val'] == 'Upload':
-            make_foler_upload()
+            d_date = url_dict['date']
+            make_foler_upload(d_date)
             time.sleep(3)
             print("업로드 완료!")
 

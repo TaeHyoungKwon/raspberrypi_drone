@@ -1,0 +1,300 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+{% load staticfiles %}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>파이캠을 활용한 촬영 드론</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Cruise Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!-- fonts -->
+<link href="//fonts.googleapis.com/css?family=Cinzel:400,700,900" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+<!-- /fonts -->
+<!-- css -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/font-awesome.min.css'%}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static  'css/gallery.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static  'css/jQuery.lightninBox.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static  'css/aos.css' %}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static  'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+<!-- /css -->
+<!-- js -->
+<script src="{% static 'js/modernizr.min.js' %}"></script>
+<!-- /js -->
+</head>
+<body>
+<!-- topbar -->
+<div class="topbar-w3ls">
+	<div class="container">
+		<a href="index.html" class="logo">
+			<h1>
+				<i class="fa fa-plane" aria-hidden="true"></i>
+				2017 컴퓨터공학과 졸업작품 전시회
+				<i class="fa fa-camera" aria-hidden="true"></i>	
+			</h1>
+		</a>		
+
+	</div>	
+</div>
+<!-- /topbar -->
+<!-- navigation -->
+<div class="navbar-wrapper">
+    <div class="container">
+		<nav class="navbar navbar-inverse navbar-static-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav cl-effect-7">
+						<li class="active"><a href="index.html" class="page-scroll">Home</a></li>
+						<li><a href="#about" class="page-scroll">프로젝트 개요</a></li>
+						<li><a href="#service" class="page-scroll">프로젝트 설명</a></li>
+						<li><a href="#gallery" class="page-scroll">프로젝트 사진</a></li>
+						<li><a href="#contact" class="page-scroll">프로젝트 시연</a></li>
+						
+					</ul>
+				</div>
+			</div>
+        </nav>
+	</div>
+</div>
+<!-- /navigation -->
+<!-- banner -->
+<section class="banner-w3ls">
+		<div id="block" data-vide-bg="{% static 'video/cruise' %}" data-vide-options="position: 0% 50%">
+			<div class="overlay">
+				<h2>Recording Drone for PiCam</h2>
+				<h3>컴퓨터공학과 2010720059 권태형</h3>
+				<p>아두이노 우노3 보드와 라즈베리파이의 파이캠을 활용하여서, 기존 드론에서 영상촬영이 가능하도록 만들었습니다.</p>		
+			</div>
+		</div>	
+</section>
+<!-- /banner -->
+<!-- about -->
+<section class="about-wthree" id="about">
+	<div class="container">
+		<div class="col-lg-6 col-md-6 col-sm-12" data-aos="flip-right">
+			<h3 class="text-center">프로젝트 개요</h3>
+			<p class="text-center">공연 촬영 시에, 정면으로 보았을 때, 좋은 뷰가 있고, 위에서 봤을 때, 좋은 뷰가 있습니다. 드론을 이용하면, 위에서 부터 정면까지 다양한 각도에서 사진 및 영상 촬영이 가능합니다.</p>
+			<hr>
+			<p class="text-center">해당 드론은 크게 라즈베리파이 안에서 django로 구성된 서버를 중심으로, 파이캠, 이를 동작시키는 클라이언트(웹), 그리고 드론 파트로 나누어져 있습니다.</p>
+		</div>
+		<div class="col-lg-6 col-md-6 col-sm-12" data-aos="flip-left">
+			<ul class="grid cs-style-1">
+				<li>
+					<figure>
+						<img src="{% static 'images/drone1.jpg' %}" alt="img01" class="img-responsive">
+
+					</figure>
+				</li>
+			</ul>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</section>
+<!-- /about -->
+<!-- divider -->
+<section class="divider-wthree">
+	<div class="container">
+	</div>
+</section>
+<!-- /divider -->
+<!-- services -->
+<section class="service-agileinfo" id="service">
+	<div class="container">
+		<img style="height:700px;weight:700px" src="{% static 'images/map.jpg' %}" alt="">
+	</div>
+</section>
+<!-- /services -->
+<!-- gallery -->
+<section class="gallery-info" id="gallery">
+	<div class="container">
+		<h3 class="text-center" data-aos="zoom-in">Our Gallery</h3>
+		<ul class="clearfix demo">
+			<li data-aos="flip-down"><img src="{% static 'images/a.jpg' %}" alt="" class="img-responsive"/></li>
+			<li data-aos="flip-down"><img src="{% static 'images/b.jpg' %}" alt="" class="img-responsive"/></li>
+			<li data-aos="flip-down"><img src="{% static 'images/c.jpg' %}" alt="" class="img-responsive"/></li>
+			<li data-aos="flip-down"><img src="{% static 'images/d.jpg' %}" alt="" class="img-responsive"/></li>
+			<li data-aos="flip-down"><img src="{% static 'images/e.jpg' %}" alt="" class="img-responsive"/></li>
+			<li data-aos="flip-down"><img src="{% static 'images/f.jpg' %}" alt="" class="img-responsive"/></li>
+			<li data-aos="flip-down"><img src="{% static 'images/g.jpg' %}" alt="" class="img-responsive"/></li>
+			<li data-aos="flip-down"><img src="{% static 'images/h.jpg' %}" alt="" class="img-responsive"/></li>
+		</ul>
+    </div>
+</section>
+<!-- /gallery -->
+<!-- team -->
+
+<!-- /team -->
+<!-- map -->
+<section style='padding-left:300px' class="map-w3" data-aos="zoom-in">
+	<h1 style="padding:100px;padding-left:300px">드론 조종 영상</h1>
+	<video style='hegith:500px;' src="{% static 'images/m1.mp4' %}" controls>이 브라우저는 재생할 수 없습니다.</video>
+	<video style='hegith:500px;' src="{% static 'images/m2.mp4' %}" controls>이 브라우저는 재생할 수 없습니다.</video>
+</section>
+<!-- /map -->
+<!-- contact -->
+<section class="contact-w3-agileits" id="contact">
+		<div class="container">
+			<h3 class="text-center" data-aos="zoom-in">프로젝트 시연</h3>
+			<div class="col-lg-3 col-md-3 contact-w3l1" data-aos="flip-right">
+				<h4>프로젝트 시연1</h4>
+				<div class="subscribe">
+					<form action="#contact" method="post">
+	
+						<div class="form-group2">
+							{% csrf_token %}
+							<button class="btn btn-outline btn-lg" name="camera" value="Capture" type="submit"><i class="fa fa-camera" aria-hidden="true"></i> 사진 촬영</button>
+						</div>
+						<div class="clearfix"></div>
+					</form>
+				</div>	
+			</div>
+	
+	
+			<div class="col-lg-3 col-md-3 contact-w3l1" data-aos="flip-right">
+					<h4>프로젝트 시연2</h4>
+					<div class="subscribe">
+						<form action="#contact" method="post">
+		
+							<div class="form-group2">
+	
+									<div class="form-group col-md-12">
+											
+										<input type="text" class="form-control" id="name" name="minute" placeholder="촬영시간(sec)" required/>
+									</div>
+	
+								{% csrf_token %}
+								<button class="btn btn-outline btn-lg" type="submit" name="camera" value="Record">영상 촬영</button>
+								{% csrf_token %}
+
+
+							</div>
+							<div class="clearfix"></div>
+						</form>
+					</div>	
+				</div>
+	
+				<div class="col-lg-3 col-md-3 contact-w3l1" data-aos="flip-right">
+						<h4>프로젝트 시연3</h4>
+						<div class="subscribe">
+							<form action="#" method="post">
+			
+								<div class="form-group2">
+		
+		
+									{% csrf_token %}
+									<input type="hidden" name="camera" value="streaming">
+									<button class="btn btn-outline btn-lg" type="submit" name="camera" value="Streaming start">스트리밍 화면</button>
+
+								</div>
+								<div class="clearfix"></div>
+							</form>
+						</div>	
+					</div>	
+	
+					<div class="col-lg-3 col-md-3 contact-w3l1" data-aos="flip-right">
+						<h4>프로젝트 시연4</h4>
+						<div class="subscribe">
+							<form action="#contact" method="post">
+			
+								<div class="form-group2">
+		
+										<div class="form-group col-md-12">
+												
+											<input type="text" class="form-control" id="name" name="f_name" placeholder="폴더명 입력(ex)2017_10_26)" required/>
+										</div>
+		
+									{% csrf_token %}
+									<button class="btn btn-outline btn-lg" type="submit" name="camera" value="Upload">구글 드라이브 사진 업로드</button>
+
+	
+	
+								</div>
+								<div class="clearfix"></div>
+							</form>
+
+
+						</div>	
+					</div>	
+	
+			<div class="clearfix"></div>
+		</div>
+	</section>
+	<!-- /contact -->
+<!-- footer -->
+<section class="footer-w3-agileits">
+	<div class="container">
+		<div class="col-lg-8 col-md-8">
+			<ul class="w3-agile">
+				<li><a href="index.html" class="page-scroll">Home</a></li>
+				<li><a href="#about" class="page-scroll">About</a></li>
+				<li><a href="#service" class="page-scroll">Services</a></li>
+				<li><a href="#gallery" class="page-scroll">Gallery</a></li>
+				<li><a href="#team" class="page-scroll">Team</a></li>
+				<li><a href="#contact" class="page-scroll">Contact</a></li>
+			</ul>
+		</div>
+		<div class="col-lg-4 col-md-4">
+			<ul class="social-icons2">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+			</ul>	
+		</div>
+		<div class="clearfix"></div>
+		<p class="text-center">&copy; 2017 Cruise. All Rights Reserved | Design by <a href="http://w3layouts.com/"> W3layouts </a></p>
+	</div>
+</section>
+<!-- /footer -->
+<!-- back to top -->
+<a href="#0" class="cd-top">Top</a>
+<!-- /back to top -->
+<!-- js files -->
+<!-- js files -->
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/smoothscroll.js' %}"></script>
+<script src="{% static 'js/jquery.easing.min.js' %}"></script>
+<script src="{% static 'js/grayscale.js' %}"></script>
+<script src="{% static 'js/aos.js' %}"></script>
+<script src="{% static 'js/index.js' %}"></script>
+<!-- js for back to top -->
+<script src="{% static 'js/top.js' %}"></script>
+<!-- /js for back to top -->
+<!-- js for about lightbox -->
+<script src="{% static 'js/jQuery.lightninBox.js' %}"></script>
+<script type="text/javascript">
+	$(".lightninBox").lightninBox();
+</script>
+<!-- /js for about lightbox -->
+<!-- js for gallery -->
+<script src="{% static 'js/jquery.picEyes.js' %}"></script>
+<script>
+$(function(){
+	//picturesEyes($('li'));
+	$('ul.demo li').picEyes();
+});
+</script>
+<!-- /js for gallery -->
+<!-- js for banner -->
+<script src="{% static 'js/jquery.vide.js' %}"></script>
+<!-- /js for banner -->
+<!-- /js files -->
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+
+<form action="/" method="post">
+    {% csrf_token %}
+    <input type="submit" name="camera" value="Capture" class="btn btn-primary">
+</form>
+
+
+
+<form action="/" method="post">
+    {% csrf_token %}
+    <input type="text" name="minute">
+    <input type="submit" name="camera" value="Record" class="btn btn-primary">
+</form>
+
+
+<form action="/" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="camera" value="streaming">
+    <input type="submit" name="camera" value="Streaming start" class="btn btn-primary">
+    <input type="submit" name="camera" value="Streaming stop" class="btn btn-primary">
+</form>

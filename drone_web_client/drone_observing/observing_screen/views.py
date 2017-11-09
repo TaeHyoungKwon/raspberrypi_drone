@@ -1,6 +1,7 @@
 from django.shortcuts import render,HttpResponse
 import requests
 import os
+import time
 
 
 
@@ -22,23 +23,27 @@ def screen(request):
 
         if data == 'Capture':
             data = {"val" : data}
-            response = requests.post('http://192.168.43.129:8000', data = data)
+            time.sleep(2)
+
+            response = requests.post('http://192.168.200.107:8002', data = data)
 
         else:
-            if val.get('minute','None') != 'None':
-                data = {"val" : data, "arg" : val['minute']}
+            if val.get('second','None') != 'None':
+                data = {"val" : data, "arg" : val['second']}
                 print("record")
-                response = requests.post('http://192.168.43.129:8000', data = data)
+                time.sleep(2)
+                response = requests.post('http://192.168.200.107:8002', data = data)
             elif val.get('f_name','None') != 'None':
                 data = {"val": data, "arg" : val['f_name']}
                 print("upload")
-                response = requests.post('http://192.168.43.129:8000', data = data)
+                time.sleep(2)
+                response = requests.post('http://192.168.200.107:8002', data = data)
             else:
                 data = {"val" : data, "arg" : 'streaming'}
 
                 print("stream")
-                
-                response = requests.post('http://192.168.43.129:8001', data = data)
+                time.sleep(2)
+                response = requests.post('http://192.168.200.107:8002', data = data)
                 os.system('stream_client')
 
             

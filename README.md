@@ -3,6 +3,11 @@
 
 ####
 
+
+![ex_screenshot](./11111.jpg)
+
+
+
 ##  프로젝트 개요
 * 공연 촬영 시에, 정면으로 보았을 때, 좋은 뷰가 있고, 위에서 봤을 때, 좋은 뷰가 있습니다. 드론을 이용하면, 위에서 부터 정면까지 다양한 각도에서 사진 및 영상 촬영이 가능합니다.
 
@@ -30,4 +35,10 @@ Gstreamer 프레임워크를 사용하였고,
 upload라는 value 값을 받았을 때,
 라즈베리파이 서버쪽에서 upload.py 파일을 실행함으로써, 파일들을 업로드 한다.
 
-YouTube Demo 영상 : 
+
+<iframe width="854" height="480" src="https://www.youtube.com/embed/PQu-4l1RaIQ" frameborder="0" gesture="media" allowfullscreen></iframe>
+
+
+YouTube Demo 영상 : https://youtu.be/PQu-4l1RaIQ
+
+

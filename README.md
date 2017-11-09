@@ -35,10 +35,6 @@ Gstreamer 프레임워크를 사용하였고,
 upload라는 value 값을 받았을 때,
 라즈베리파이 서버쪽에서 upload.py 파일을 실행함으로써, 파일들을 업로드 한다.
 
-
-<iframe width="854" height="480" src="https://www.youtube.com/embed/PQu-4l1RaIQ" frameborder="0" gesture="media" allowfullscreen></iframe>
-
-
 YouTube Demo 영상 : https://youtu.be/PQu-4l1RaIQ
 
 
